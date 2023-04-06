@@ -24,8 +24,8 @@ int main()
 
     sort(arr.begin(), arr.end(), [&](const int &x, const int &y)
          {
-      if(cnt[x] != cnt[y]) return cnt[x] > cnt[y];
-      return x < y; });
+        if(cnt[x] != cnt[y]) return cnt[x] > cnt[y];
+        return x < y; });
 
     for (int x : arr)
         cout << x << " ";
